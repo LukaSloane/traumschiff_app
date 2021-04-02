@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="consist">
+    <ion-title>Viewpoints</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div *ngIf="this.loaededViewpoints && this.loaededViewpoints.length > 0">
+    <p
+    *ngFor="let v of loaededViewpoints">{{ v.id }}: {{ v.name }} <br>
+    Standort: {{ v.plz }}
+    </p>
+  </div>
+
+  <div *ngIf="!this.loaededViewpoints || this.loaededViewpoints.length === 0">
+    <p>Die Inhalte werden geladen.</p>
+  </div>
+
+</ion-content>

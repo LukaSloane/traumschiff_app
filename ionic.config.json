@@ -1,0 +1,7 @@
+{
+  "name": "traumschiff",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

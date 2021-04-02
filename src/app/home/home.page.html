@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="consist">
+    <ion-title>Traumschiff</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <p>Hello World</p>
+
+
+  <div *ngIf="this.allEvents && this.allEvents.length > 0">
+   <p *ngFor="let e of allEvents">{{ e.stay_from }}</p>
+  </div>
+</ion-content>
