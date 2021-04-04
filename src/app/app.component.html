@@ -1,26 +1,49 @@
 <ion-app>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
 
-  <ion-menu menuId="main-menu" contentId="main">
-    <ion-header>
-      <ion-toolbar color="consist">
-        <ion-title>Menu</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
-      <ion-list>
-        <ion-menu-toggle>
-          <ion-item *ngFor="let p of pages"  routerLink="/{{ p.route }}">
-            <ion-icon name="star-outline" slot="start"></ion-icon>
-            {{ p.title }}
-          </ion-item>
-        </ion-menu-toggle>
+      <ion-tab-button tab="home">
+        <ion-icon name="calendar"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
 
-      </ion-list>
-    </ion-content>
-  </ion-menu>
+      <ion-tab-button tab="info">
+        <ion-icon name="calendar"></ion-icon>
+        <ion-label>Info</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="ship-info">
+        <ion-icon name="calendar"></ion-icon>
+        <ion-label>Ship Info</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="ships">
+        <ion-icon name="calendar"></ion-icon>
+        <ion-label>Ships</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button name="livemap">
+        <ion-icon name="calendar"></ion-icon>
+        <ion-label>Livemap</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="viewpoints">
+        <ion-icon name="calendar"></ion-icon>
+        <ion-label>Viewpoints</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="todos">
+        <ion-icon name="calendar"></ion-icon>
+        <ion-label>Todos</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
 
 
 
 
-  <ion-router-outlet id="main"></ion-router-outlet>
+
+
+  <ion-router-outlet></ion-router-outlet>
 </ion-app>
