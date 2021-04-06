@@ -13,17 +13,17 @@ import { ViewpointsPage } from './pages/viewpoints/viewpoints.page';
 })
 export class AppComponent {
 
-  public pages: Array<{title: string, route: string}>;
+  //public pages: Array<{title: string, route: string}>;
 
   constructor(private menu: MenuController) {
-    this.pages = [
-      { title: "Home", route: "home"},
-      { title: "Ships", route: "ships"},
-      { title: "LiveMap", route: "livemap"},
-      { title: "Viewpoints", route: "viewpoints"},
-      { title: "Information", route: "info"},
-      { title: "Todos", route: "todo"}
-    ];
+    // this.pages = [
+    //   { title: "Home", route: "home"},
+    //   { title: "Ships", route: "ships"},
+    //   { title: "LiveMap", route: "livemap"},
+    //   { title: "Viewpoints", route: "viewpoints"},
+    //   { title: "Information", route: "info"},
+    //   { title: "Todos", route: "todo"}
+    // ];
   }
 
 }

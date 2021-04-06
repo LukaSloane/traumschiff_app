@@ -17,23 +17,23 @@ export class HomePage {
   allEvents: Events[] = [];
 
   constructor(private menu: MenuController, private eventService: EventsService) {
-    this.pages = [
-      { title: "Diesen Monat in Kiel", component: HomePage },
-      //{ title: "Traumschiffe", component: ShipsPage },
-      //{ title: "Livekarte", component: LiveMapPage },
-      //{ title: "Aussichtspunkte", component: ViewpointsPage },
-      //{ title: "Info", component: InfoPage }
-    ];
+    // this.pages = [
+    //   { title: "Diesen Monat in Kiel", component: HomePage },
+    //   //{ title: "Traumschiffe", component: ShipsPage },
+    //   //{ title: "Livekarte", component: LiveMapPage },
+    //   //{ title: "Aussichtspunkte", component: ViewpointsPage },
+    //   //{ title: "Info", component: InfoPage }
+    // ];
   }
 
 
 
   ngOnInit() {
-    this.eventService.loadEvents().then((event: Events[]) => {
-      this.allEvents = event;
-    }, error => {
-      this.allEvents = [];
-    });
+    // this.eventService.loadEvents().then((event: Events[]) => {
+    //   this.allEvents = event;
+    // }, error => {
+    //   this.allEvents = [];
+    // });
   }
 
 
