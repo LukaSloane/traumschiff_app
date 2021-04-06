@@ -9,7 +9,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
   },
 
-
 ];
 
 @NgModule({
